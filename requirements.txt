@@ -1,0 +1,4 @@
+pywebio
+fastapi
+requests
+qrcode
