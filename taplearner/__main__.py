@@ -46,7 +46,8 @@ def submit_to_join_class():
         # output.put_text("Answer submitted!")
         return True
     else:
-        output.put_text("Failed to submit the answer.")
+        output.toast("Could not join class", color="error")
+        # output.put_text("Failed to submit the answer.")
         return False
 
 

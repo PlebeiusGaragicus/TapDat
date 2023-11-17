@@ -5,7 +5,7 @@ from pydantic import BaseModel
 
 import dotenv
 
-from tapserver import JoinClassRequest, AnswerSubmission
+from tapserver import JoinClassRequest, AnswerSubmission, student
 
 dotenv.load_dotenv()
 
@@ -13,18 +13,8 @@ app = FastAPI()
 
 CLASS_CODEWORD = os.getenv("CLASS_CODEWORD")
 
-
-class JoinClassRequest(BaseModel):
-    username: str
-    codeword: str
-
-class AnswerSubmission(BaseModel):
-    username: str
-    codeword: str
-    answer: str
-
-
 students = {}  # Dictionary to keep track of students and their answers
+
 
 
 @app.post("/join_class")
