@@ -3,3 +3,6 @@ fastapi
 requests
 qrcode
 uvicorn
+websockets
+pywebio-battery
+python-dotenv
