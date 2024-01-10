@@ -72,7 +72,7 @@ def check_answers():
                 ["Answer", "Count"],
                 *[[k, v] for k, v in answers.items()]
             ])
-        
+
         output.put_button("Next question", onclick=next_question, color="success")
 
 

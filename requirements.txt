@@ -1,8 +1,10 @@
-pywebio
-fastapi
-requests
-qrcode
-uvicorn
-websockets
-pywebio-battery
 python-dotenv
+
+websockets
+requests
+fastapi
+streamlit
+streamlit_authenticator
+
+uvicorn
+#qrcode
